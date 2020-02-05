@@ -122,6 +122,12 @@ public class DetailsActivity extends AppCompatActivity {
                 setQuantity();
                 break;
             }
+            case R.id.iv_dImg: {
+                Intent intent = new Intent(this, ARCameraActivity.class);
+                intent.putExtra("pName", itemName );
+                this.startActivity(intent);
+                break;
+            }
         }
     }
 

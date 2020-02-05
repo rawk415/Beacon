@@ -49,6 +49,7 @@
         <activity android:name="jo.beacon.project.activity.MypageActivity" />
         <activity android:name="jo.beacon.project.activity.ARCameraActivity" />
         <meta-data android:name="com.google.ar.core" android:value="required" />
+
     </application>
 
 </manifest>

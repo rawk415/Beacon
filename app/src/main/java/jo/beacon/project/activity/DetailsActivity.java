@@ -69,7 +69,7 @@ public class DetailsActivity extends AppCompatActivity {
     //----------------------------------------------------------------------------------------------
     // OnClick
     //----------------------------------------------------------------------------------------------
-    @OnClick({R.id.btn_quantity_minus, R.id.btn_quantity_add, R.id.btn_buy, R.id.btn_basket, R.id.r1})
+    @OnClick({R.id.btn_quantity_minus, R.id.btn_quantity_add, R.id.btn_buy, R.id.btn_view3D, R.id.r1})
     void buttonEvents(View view) {
         switch (view.getId()) {
             case R.id.btn_quantity_minus: {
@@ -86,8 +86,10 @@ public class DetailsActivity extends AppCompatActivity {
                 tvQuantity.setText("[" + quantity + "]");
                 break;
             }
-            case R.id.btn_basket: {
-                Toast.makeText(this, "준비중입니다..", Toast.LENGTH_SHORT).show();
+            case R.id.btn_view3D: {
+                Intent intent = new Intent(this, ARCameraActivity.class);
+                intent.putExtra("pName", itemName );
+                this.startActivity(intent);
                 break;
             }
             case R.id.btn_buy: {
@@ -122,12 +124,7 @@ public class DetailsActivity extends AppCompatActivity {
                 setQuantity();
                 break;
             }
-            case R.id.iv_dImg: {
-                Intent intent = new Intent(this, ARCameraActivity.class);
-                intent.putExtra("pName", itemName );
-                this.startActivity(intent);
-                break;
-            }
+
         }
     }
 

@@ -129,18 +129,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             data.add(new RecommendDTO(productName.get(i), url));
         }
 
-        /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        //2020.01.07 add Item decoration for dual line recycler view
-        /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//        mLayoutManager = new LinearLayoutManager(this);
-//        mLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
-//        // setLayoutManager
-//        mView.setLayoutManager(mLayoutManager);
-
+        //------------------------------------------------------------------------------------------
+        // 2020.01.07 add Item decoration for dual line recycler view
+        //------------------------------------------------------------------------------------------
         RecyclerView.LayoutManager mLayoutManager = new GridLayoutManager(this, 2);
         mView.setLayoutManager(mLayoutManager);
-        //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
 
         // init Adapter
         mAdapter = new MainProductAdapter(this);

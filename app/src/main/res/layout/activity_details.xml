@@ -30,15 +30,6 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-<!--            <TextView-->
-<!--                android:id="@+id/tv_no"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginLeft="10dp"-->
-<!--                android:layout_marginTop="10dp"-->
-<!--                android:text="1/1"-->
-<!--                android:textColor="@color/black"-->
-<!--                android:textSize="12dp" />-->
 
             <TextView
                 android:layout_width="match_parent"
@@ -152,13 +143,13 @@
                 android:padding="10dp">
 
                 <Button
-                    android:id="@+id/btn_basket"
+                    android:id="@+id/btn_view3D"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:layout_marginRight="5dp"
                     android:layout_weight="1"
                     android:background="@color/color_background"
-                    android:text="Basket"
+                    android:text="view 3D"
                     android:textColor="@color/white" />
 
                 <Button
